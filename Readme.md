@@ -57,11 +57,13 @@ python bot.py
 ```python
 get_spot_price(asset: str, currency: str = "USD") -> float
 ```
+
 Returns the current price from Coinbase.
 
 ```python
 get_conversion_rate(from_asset: str, to_asset: str) -> float
 ```
+
 Returns conversion rate from CoinGecko.
 
 ### `OpenAIService`
@@ -70,6 +72,7 @@ Returns conversion rate from CoinGecko.
 classify_intent(query: str) -> dict
 generate_response(query: str, data: dict) -> str
 ```
+
 Uses GPT-4 to detect user intent and generate natural responses.
 
 ---
@@ -78,10 +81,9 @@ Uses GPT-4 to detect user intent and generate natural responses.
 
 ```
 cryptoOracleBot/
-├── bot.py               # Telegram bot logic
-├── crypto_api.py        # Crypto data functions
-├── openai_service.py    # GPT-4 interface
-├── config.py            # Constants and keys
+├── bot.py               # Telegram bot logic/Crypto data functions/OpenAI functions
+├── Readme.md            # Setup and execution information
 ├── requirements.txt     # Dependencies
 └── .env                 # Env variables
+
 ```
